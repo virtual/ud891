@@ -18,7 +18,8 @@ page('/:slug', function(context) {
   var newPage = document.querySelector('main [data-page='+slug+']');
   newMenuItem.classList.add('is-active');
   newPage.classList.add('is-active');
-
+  var h2 = document.querySelector('main [data-page='+slug+'] h2'); 
+  h2.focus();
 });
 
 page({
