@@ -21,7 +21,13 @@
     this.focusedButton = this.buttons[this.focusedIdx];
 
     this.el.addEventListener('keydown', this.handleKeyDown.bind(this));
+    // this.el.addEventListener('click', ()=> { this.handleClick(this); }, false);
   }
+  
+  // RadioGroup.prototype.handleClick = function(e) {  
+  //   this.el.classList.add('mew')
+  //   console.log(e.el);
+  // };
 
   RadioGroup.prototype.handleKeyDown = function(e) {
     switch(e.keyCode) {
@@ -32,7 +38,7 @@
         e.preventDefault();
 
         // This seems like a good place to do some stuff :)
-
+        this.focusedIdx = (this.focusedIdx - 1 >= 0) ?  this.focusedIdx-1 : this.buttons.length - 1;
         break;
 
       }
@@ -43,8 +49,9 @@
         e.preventDefault();
 
         // This seems like a good place to do some stuff :)
-
+        this.focusedIdx = (this.focusedIdx + 1 < this.buttons.length) ? this.focusedIdx + 1 : 0;
         break;
+
       }
 
     }

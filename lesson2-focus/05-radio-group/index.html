@@ -11,22 +11,22 @@
 
     <div class="demo">
 
-      <h3>Drink Options</h3>
+      <h3 id="radiolabel">Drink Options</h3>
 
-      <ul id="group1" class="radiogroup">
-        <li tabindex="0" class="radio" checked>
+      <ul id="group1" class="radiogroup" role="radiogroup" aria-labelledby="radiolabel">
+        <li tabindex="0" class="radio" role="radio" checked>
           Water
         </li>
-        <li tabindex="-1" class="radio">
+        <li tabindex="-1" class="radio" role="radio">
           Tea
         </li>
-        <li tabindex="-1" class="radio">
+        <li tabindex="-1" class="radio" role="radio">
           Coffee
         </li>
-        <li tabindex="-1" class="radio">
+        <li tabindex="-1" class="radio" role="radio">
           Cola
         </li>
-        <li tabindex="-1" class="radio">
+        <li tabindex="-1" class="radio" role="radio">
           Ginger Ale
         </li>
       </ul>
