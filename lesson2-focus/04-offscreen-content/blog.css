@@ -171,4 +171,5 @@ h6, .h6 {
 .modal {
   display: block;
   left: 9999px;
+  visibility: hidden;
 }
